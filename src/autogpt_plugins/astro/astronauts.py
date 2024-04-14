@@ -11,7 +11,7 @@ def get_num_astronauts():
         int: The number of astronauts in space.
     """
     #Get the data
-    response = requests.get("http://api.open-notify.org/astros.json")
+    response = requests.get("http://api.open-notify.org/astros.json", timeout=60)
     #Convert it to JSON
     data = response.json()
     #Extract the number and return it
@@ -26,7 +26,7 @@ def get_coords_iss():
         int: The longitude of the ISS.
     """
     #Get the data
-    response = requests.get("http://api.open-notify.org/iss-now.json")
+    response = requests.get("http://api.open-notify.org/iss-now.json", timeout=60)
     #Convert it to JSON
     data = response.json()
     #Extract the number and return it
