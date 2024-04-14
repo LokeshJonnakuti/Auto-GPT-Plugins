@@ -1,0 +1,288 @@
+repo_name: LokeshJonnakuti/Auto-GPT-Plugins
+report_id: 356775e5b0081e52e7379469009bc708
+version: 0.1
+repo_type: Public
+timestamp: '2024-04-14T10:56:26+00:00'
+requested_by: web-flow
+provider: github
+branch: master
+detected_tools_count: 22
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/.github/workflows/ci.yml
+  detection_source: ".github/workflows/ci.yml"
+  last_updated_by: Gyanendra Mishra
+  last_updated_on: 2023-05-05 16:59:46.000000000 Z
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: EthanJohnson97
+  last_updated_on: 2023-04-21 02:21:43.000000000 Z
+- name: Pylint
+  description: Source-code, bug and quality checker for the Python programming language
+  website_url: https://www.pylint.org/
+  license: GPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/4837/py.jpg
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
+- name: pytest
+  description: A full-featured Python testing tool to help you write better programs
+  website_url: http://pytest.org/latest/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/4586/Lu99Qe0Z_400x400.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Nicholas Tindle
+  last_updated_on: 2023-05-06 04:57:49.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins
+  detection_source: Repo Metadata
+- name: black
+  description: The uncompromising code formatter
+  package_url: https://pypi.org/project/black
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20099/default_029b9bbfb6be2cd34bebeda5b8e1e80a1d22441c.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
+- name: bs4
+  description: Dummy package for Beautiful Soup
+  package_url: https://pypi.org/project/bs4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19906/default_2aeed05332f0410b54817405c7e8e202a7e763cf.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: EthanJohnson97
+  last_updated_on: 2023-04-21 02:21:43.000000000 Z
+- name: colorama
+  description: Cross-platform colored terminal text
+  package_url: https://pypi.org/project/colorama
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19845/default_accee5d2b8ed75c2245f13504daf75b1cbc8cc9f.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Nicholas Tindle
+  last_updated_on: 2023-05-12 07:26:07.000000000 Z
+- name: flake8
+  description: 'The modular source code checker: pep8, pyflakes and co'
+  package_url: https://pypi.org/project/flake8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19920/default_c8be5290cb8d8a8b578535a2c6475d1057ff4ea4.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
+- name: isort
+  description: A Python utility / library to sort Python imports
+  package_url: https://pypi.org/project/isort
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20117/default_9cf91bfbbfb266fc12a914cdc09d9e4b55c773bb.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
+- name: pandas
+  description: Powerful data structures for data analysis
+  package_url: https://pypi.org/project/pandas
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19837/default_85689b353a3a9409328e253ea28d859d29151e0c.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
+- name: pytest-cov
+  description: Pytest plugin for measuring coverage
+  package_url: https://pypi.org/project/pytest-cov
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19958/default_e91a78767854f0fa80aab2f13d1a25b15ca2d278.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Nicholas Tindle
+  last_updated_on: 2023-05-06 04:57:49.000000000 Z
+- name: python-telegram-bot
+  description: We have made you a wrapper you can't refuse
+  package_url: https://pypi.org/project/python-telegram-bot
+  license: GPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20123/default_c68325cce20e10071c4ad3e54c2ee159ac131c11.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Luke
+  last_updated_on: 2023-06-03 09:47:00.000000000 Z
+- name: requests
+  description: Python HTTP for Humans
+  package_url: https://pypi.org/project/requests
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19826/default_d7c684bf2673f008a9f02ac93901229297a22d7e.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: David Delgado
+  last_updated_on: 2023-04-30 22:34:07.000000000 Z
+- name: requests-mock
+  description: Mock out responses from the requests package
+  package_url: https://pypi.org/project/requests-mock
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20365/default_20f72d65682b6cad9939bcf162d0ef14fced900c.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: David Delgado
+  last_updated_on: 2023-04-30 22:34:07.000000000 Z
+- name: setuptools
+  description: Easily download
+  package_url: https://pypi.org/project/setuptools
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19831/default_65d1c12a133e1aa67ae96a1221c9c122ddf86c5f.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
+- name: tweepy
+  description: Twitter library for python
+  package_url: https://pypi.org/project/tweepy
+  version: 4.13.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20397/default_49831882be649a3ae5c46617c462b503ba8fccbc.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
+- name: twine
+  description: Collection of utilities for publishing packages on PyPI
+  package_url: https://pypi.org/project/twine
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19935/default_63c8e7696ded615c51302c06e54b0d0c8ae9af3f.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
+- name: validators
+  description: Python Data Validation for Humans™
+  package_url: https://pypi.org/project/validators
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19964/default_61e35171bd9c0e5c5b88b2e4221ca242576ad8c0.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: David Delgado
+  last_updated_on: 2023-05-01 04:35:01.000000000 Z
+- name: wheel
+  description: A built-package format for Python
+  package_url: https://pypi.org/project/wheel
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19889/default_7182952cb92ae36151a754e2592ac68e6e6340df.png
+  detection_source_url: https://github.com/LokeshJonnakuti/Auto-GPT-Plugins/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: Pierluigi Failla
+  last_updated_on: 2023-05-10 17:13:59.000000000 Z
