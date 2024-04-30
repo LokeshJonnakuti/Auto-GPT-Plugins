@@ -1,11 +1,11 @@
 import asyncio
 import os
-import random
 import traceback
 
 from telegram import Bot, Update
 from telegram.error import TimedOut
 from telegram.ext import CallbackContext
+import secrets
 
 response_queue = ""
 
@@ -39,7 +39,7 @@ class TelegramUtils:
                     chat_id = update.message.chat.id
                     print("Your chat id is: " + str(chat_id))
                     print("And the message is: " + update.message.text)
-                    confirmation = random.randint(1000, 9999)
+                    confirmation = secrets.SystemRandom().randint(1000, 9999)
                     print("Sending confirmation message: " + str(confirmation))
                     text = f"Hello! Your chat id is: {chat_id} and the confirmation code is: {confirmation}"
                     self.chat_id = chat_id

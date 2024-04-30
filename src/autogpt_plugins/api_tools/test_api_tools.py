@@ -1,7 +1,8 @@
 import json
-import random
 import requests_mock
 import unittest
+import secrets
+
 try:
     from .api_tools import ApiCallCommand
 except ImportError:
@@ -362,7 +363,7 @@ class TestAutoGPTAPITools(unittest.TestCase):
         """Test the self.plugin_class.make_api_call() function with valid body."""
         with requests_mock.Mocker() as m:
             m.post('http://example.com/endpoint', text='success', status_code=200)
-            body_length = random.randint(1, 24000)
+            body_length = secrets.SystemRandom().randint(1, 24000)
             body = 'a' * body_length
             result = self.plugin_class.make_api_call('http://example.com', '/endpoint', mthd='POST', body=body)
             response = json.loads(result)
@@ -511,7 +512,7 @@ class TestAutoGPTAPITools(unittest.TestCase):
         """Test the self.plugin_class.make_api_call() function with valid headers."""
         with requests_mock.Mocker() as m:
             m.get('http://example.com/endpoint', text='success', status_code=200)
-            headers = {'test': 'a' * random.randint(1, 24000)}
+            headers = {'test': 'a' * secrets.SystemRandom().randint(1, 24000)}
             result = self.plugin_class.make_api_call('http://example.com', '/endpoint', hdrs=headers)
             response = json.loads(result)
 
