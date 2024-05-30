@@ -16,7 +16,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["abstract-singleton"]
+dependencies = ["abstract-singleton", "security==1.2.1"]
 
 [project.urls]
 "Homepage" = "https://github.com/Significant-Gravitas/Auto-GPT-Plugins"
