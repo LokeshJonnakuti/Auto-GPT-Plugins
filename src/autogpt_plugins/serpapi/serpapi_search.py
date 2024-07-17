@@ -93,7 +93,7 @@ def serpapi_search(query: str):
     Perform a SerpApi search and return the JSON results.
     """
 
-    response = requests.get("https://serpapi.com/search", params=_get_params(query))
+    response = requests.get("https://serpapi.com/search", params=_get_params(query), timeout=60)
     response.raise_for_status()
 
     result_json = response.json()
