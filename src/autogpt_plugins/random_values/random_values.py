@@ -1,11 +1,11 @@
 """Random Values classes for Autogpt."""
 
 import json
-import random
 import string
 import uuid
 
 import lorem
+import secrets
 
 """Random Number function for Autogpt."""
 
@@ -60,10 +60,10 @@ class RandomValues:
         random_numbers = []
         if isinstance(min, int) and isinstance(max, int):
             for _ in range(cnt):
-                random_numbers.append(random.randint(min, max))
+                random_numbers.append(secrets.SystemRandom().randint(min, max))
         else:
             for _ in range(cnt):
-                random_numbers.append(random.uniform(min, max))
+                random_numbers.append(secrets.SystemRandom().uniform(min, max))
 
         return json.dumps(random_numbers)
 
@@ -138,7 +138,7 @@ class RandomValues:
         strings = []
         for _ in range(cnt):
             strings.append(
-                "".join(random.choice(string.ascii_letters) for i in range(len))
+                "".join(secrets.choice(string.ascii_letters) for i in range(len))
             )
 
         return json.dumps(strings)
@@ -180,7 +180,7 @@ class RandomValues:
         for _ in range(cnt):
             passwords.append(
                 "".join(
-                    random.choice(string.ascii_letters + string.digits + string.punctuation)
+                    secrets.choice(string.ascii_letters + string.digits + string.punctuation)
                     for i in range(len)
                 )
             )
