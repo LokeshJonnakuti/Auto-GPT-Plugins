@@ -1,6 +1,6 @@
 import os
 import re
-import requests
+from security import safe_requests
 
 _engine_query_key = {
     "ebay": "_nkw",
@@ -93,7 +93,7 @@ def serpapi_search(query: str):
     Perform a SerpApi search and return the JSON results.
     """
 
-    response = requests.get("https://serpapi.com/search", params=_get_params(query))
+    response = safe_requests.get("https://serpapi.com/search", params=_get_params(query))
     response.raise_for_status()
 
     result_json = response.json()

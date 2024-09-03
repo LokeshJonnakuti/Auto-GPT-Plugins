@@ -7,6 +7,7 @@ from typing import Dict, Optional
 from urllib.parse import urljoin, urlparse
 from urllib.parse import urljoin
 from validators import url as is_valid_url
+from security import safe_requests
 
 class ApiCallCommand:
     """
@@ -186,7 +187,7 @@ class ApiCallCommand:
         # Make the request
         try:
             if sanitized_method == "GET":
-                response = requests.get(url, params=params, headers=hdrs, timeout=timeout)
+                response = safe_requests.get(url, params=params, headers=hdrs, timeout=timeout)
             elif sanitized_method == "HEAD":
                 response = requests.head(url, params=params, headers=hdrs, timeout=timeout)
             elif sanitized_method == "OPTIONS":
