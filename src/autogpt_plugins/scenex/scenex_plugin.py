@@ -34,7 +34,7 @@ class SceneXplain:
             ]
         }
 
-        response = requests.post(self.API_ENDPOINT, headers=headers, json=payload)
+        response = requests.post(self.API_ENDPOINT, headers=headers, json=payload, timeout=60)
         result = response.json().get("result", [])
         img = result[0] if result else {}
 
