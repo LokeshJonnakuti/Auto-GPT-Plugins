@@ -1,8 +1,7 @@
 import json
 import os
 import re
-
-import requests
+from security import safe_requests
 
 
 def clean_text(text: str) -> str:
@@ -29,7 +28,7 @@ def _bing_search(query: str, num_results=8) -> str:
         "textDecorations": True,
         "textFormat": "HTML",
     }
-    response = requests.get(search_url, headers=headers, params=params)
+    response = safe_requests.get(search_url, headers=headers, params=params)
     response.raise_for_status()
     search_results = response.json()
 
